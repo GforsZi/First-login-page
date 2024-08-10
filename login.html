@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+
+  <!-- style css -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0 5%;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #4608bb;
+    }
+
+    .conta {
+      width: 100%;
+      display: flex;
+      max-width: 850px;
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .login {
+      width: 400px;
+    }
+
+    form {
+      width: 250px;
+      margin: 60px auto;
+    }
+
+    h1 {
+      margin: 20px;
+      text-align: center;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    hr {
+      border-top: 2px solid #4608bb;
+    }
+
+    p {
+      font-weight: bold;
+      text-align: center;
+      margin: 10px;
+    }
+
+    img {
+      width: 500px;
+      height: 100%;
+      border-top-right-radius: 60px;
+      border-bottom-right-radius: 60px;
+      object-fit: contain;
+    }
+
+    form label {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 5px;
+    }
+
+    input {
+      width: 100%;
+      margin: 2px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      border: 1px solid gray;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      padding: 8px;
+      width: 252px;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      border-radius: 5px;
+      background: #4608bb;
+    }
+
+    button:hover {
+      background: #270a5e;
+    }
+
+    a {
+      font-size: 14px;
+      margin-top: 20px;
+      color: rgb(88, 88, 88);
+      background: #a3a3a3;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      color: rgb(150, 157, 163);
+      background: #e0e0e0;
+    }
+  </style>
+
+  <!-- text html -->
+  <body>
+    <div class="conta">
+      <div class="login">
+        <form action="">
+          <h1>Login</h1>
+          <hr />
+          <p>Gfors app</p>
+          <label for="">Email</label>
+          <input type="text" placeholder="*****@gmail.com" />
+          <label for="">Password</label>
+          <input type="password" placeholder="******" />
+          <button onclick="sayHay()">Login</button> <br />
+          <a href="forgot">Forgot password</a>
+        </form>
+      </div>
+      <img src="page.jpg" alt="" />
+    </div>
+  </body>
+  <script>
+    function sayHay() {
+      alert("Proses Login sadang berlangsung mohon tunggu");
+    }
+  </script>
+</html>
